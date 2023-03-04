@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NRDropDown'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'Custom Drop down with selection icon'
 
 # This description is used to generate tags and improve search results.

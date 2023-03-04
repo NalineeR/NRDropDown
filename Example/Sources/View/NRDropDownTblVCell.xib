@@ -30,7 +30,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eXH-ob-dh6">
                                         <rect key="frame" x="0.0" y="0.0" width="28" height="20"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icCheck" translatesAutoresizingMaskIntoConstraints="NO" id="4EG-ZT-V3J">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NRDropDownCheck.png" translatesAutoresizingMaskIntoConstraints="NO" id="4EG-ZT-V3J">
                                                 <rect key="frame" x="8" y="0.0" width="20" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="4EG-ZT-V3J" secondAttribute="height" multiplier="1:1" id="S3I-ba-oLj"/>
@@ -72,7 +72,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2pg-x8-Xc6">
                                         <rect key="frame" x="0.0" y="0.0" width="28" height="20"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icCheck1" translatesAutoresizingMaskIntoConstraints="NO" id="eTj-BM-CZ5">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NRDropDownCheck.png" translatesAutoresizingMaskIntoConstraints="NO" id="eTj-BM-CZ5">
                                                 <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="eTj-BM-CZ5" secondAttribute="height" multiplier="1:1" id="BeW-pV-81I"/>
@@ -148,7 +148,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="icCheck" width="21.333333969116211" height="21.333333969116211"/>
-        <image name="icCheck1" width="21.333333969116211" height="21.333333969116211"/>
+        <image name="NRDropDownCheck.png" width="64" height="64"/>
     </resources>
 </document>

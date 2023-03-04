@@ -8,14 +8,7 @@
 import UIKit
 
 
-enum SelectionType{
-    
-    case leftCheck
-    case rightCheck
-    case selectedBackground
-}
-
-class DropDownHelper:NSObject{
+public class NRDropDownHelper:NSObject{
     ///Holds the identifier for DropDown TableView Cell
     private let strCellID = "NRDropDownTblVCell"
     ///holds the anchor view
@@ -42,7 +35,7 @@ class DropDownHelper:NSObject{
     ///handler called on did select from table
     var didSelectHandler:((Int)->())? = nil
     ///Use this to customize the cell properties
-    var cellProperties = CellModal()
+    public var cellProperties = CellModal()
     ///return the max height for drop down table view
     var dropDownHeight:CGFloat{
         var count = arrDataSource.count
@@ -53,12 +46,15 @@ class DropDownHelper:NSObject{
     private var yOrigin:CGFloat{
         return anchorFrame.origin.y + anchorFrame.height + paddingFromAnchorV
     }
+    var isVisible:Bool{
+        return isDropDownVisible
+    }
     ///true -> if drop down table is visible , else false
-    var isDropDownVisible = false
+    private var isDropDownVisible = false
     ///holds the animation duration for show-hide the DropDown. Default is 0.8
-    var animationDuration = CGFloat(0.6)
+    public var animationDuration = CGFloat(0.6)
     ///Holds the cell height for DropDown. Default is 30.
-    var cellHeight = CGFloat(30)
+    public var cellHeight = CGFloat(30)
     
     //MARK:- init
     /// - Parameters:
@@ -67,7 +63,7 @@ class DropDownHelper:NSObject{
     /// - achorVFrame: holds frame value of anchor view
     /// - yValue: y origin value
     /// - selectedIndex -> holds the index of selected item
-    init(delegateObj:UIViewController,
+    public init(delegateObj:UIViewController,
                     dataSource:[String],
                     anchorV:UIView,
                     padding:CGFloat = CGFloat(5),
@@ -93,7 +89,8 @@ class DropDownHelper:NSObject{
     
     private func initialSetup(){
         
-        tblVDropDown.register(UINib.init(nibName: strCellID, bundle: nil), forCellReuseIdentifier: strCellID)
+        let bundle = Bundle(for: self.classForCoder)
+        tblVDropDown.register(UINib.init(nibName: strCellID, bundle: bundle), forCellReuseIdentifier: strCellID)
         tblVDropDown.delegate = self
         tblVDropDown.dataSource = self
         
@@ -104,16 +101,17 @@ class DropDownHelper:NSObject{
     
     /// reload table view with new datasource
     /// - Parameters:
-    func reloadDataSource(dataSource:[String]){
+    public func reloadDataSource(dataSource:[String]){
         showDropDown()
         arrDataSource = dataSource
         tblVDropDown.reloadData()
+        updateTableFrame()
     }
     
-    func show(){
+    public func show(){
         showDropDown()
     }
-    func hide(){
+    public func hide(){
         removeTransparentView(shouldRemove: false)
     }
     
@@ -149,6 +147,10 @@ class DropDownHelper:NSObject{
     }
     func updateYOrigin(yValue:CGFloat){
         anchorFrame.origin.y = yValue + paddingFromAnchorV
+        updateTableFrame()
+    }
+    
+    private func updateTableFrame(){
         UIView.animate(withDuration: 0.2) {[weak self] in
             guard let ws = self else {return}
             ws.tblVDropDown.frame = CGRect(x: ws.getUpdatexXPosition(),
@@ -156,7 +158,6 @@ class DropDownHelper:NSObject{
                                            width: ws.tableWidth,
                                            height: ws.dropDownHeight)
         }
-        
     }
     
     ///Returns the new x position if the based on current values the right part is getting out of screen
@@ -218,13 +219,13 @@ class DropDownHelper:NSObject{
 }
 
 
-extension DropDownHelper:UITableViewDataSource,UITableViewDelegate{
+extension NRDropDownHelper:UITableViewDataSource,UITableViewDelegate{
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrDataSource.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tblVDropDown.dequeueReusableCell(withIdentifier: strCellID, for: indexPath) as! NRDropDownTblVCell
         let row = indexPath.row
         //let isLastItem = (row == arrDataSource.count-1)
@@ -235,7 +236,7 @@ extension DropDownHelper:UITableViewDataSource,UITableViewDelegate{
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let cell = tableView.cellForRow(at: indexPath) as? NRDropDownTblVCell{
             cell.isCellSelected = true
             cell.updateSelection()
@@ -243,20 +244,20 @@ extension DropDownHelper:UITableViewDataSource,UITableViewDelegate{
         didSelectHandler?(indexPath.row)
         removeTransparentView(shouldRemove: true)
     }
-    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         if let cell = tableView.cellForRow(at: indexPath) as? NRDropDownTblVCell{
             cell.isCellSelected = false
             cell.updateSelection()
         }
     }
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return cellHeight
     }
 }
 
-extension DropDownHelper:UIGestureRecognizerDelegate{
+extension NRDropDownHelper:UIGestureRecognizerDelegate{
     // UIGestureRecognizerDelegate method
-    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
+    public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
         if touch.view?.isDescendant(of: tblVDropDown) == true {
             return false
         }

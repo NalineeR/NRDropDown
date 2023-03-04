@@ -7,7 +7,7 @@
 
 import UIKit
 
-class NRDropDownTblVCell:UITableViewCell{
+open class NRDropDownTblVCell:UITableViewCell{
     @IBOutlet weak var viewContainer:UIView!
     @IBOutlet weak var viewLeftCheck:UIView!
     @IBOutlet weak var viewRightCheck:UIView!

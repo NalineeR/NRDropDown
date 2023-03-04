@@ -1,5 +1,5 @@
 PODS:
-  - NRDropDown (0.1.0)
+  - NRDropDown (0.1.3)
 
 DEPENDENCIES:
   - NRDropDown (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  NRDropDown: b61ef885fd9dfd2cd40399035f6cadd6bb2a1e3c
+  NRDropDown: f2fcb3834b1ce2c284fe04b348d26bdd83919403
 
 PODFILE CHECKSUM: 5c5c0c351e06acb2b8eee54423cbd94dce848cd4
 

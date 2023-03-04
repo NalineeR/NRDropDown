@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import NRDropDown
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var btn:UIButton!
+    var selectedIndex:Int? = nil
+    var dropDownObj:NRDropDownHelper? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -18,6 +22,15 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    @IBAction func btnTapped(sender:UIButton){
+        dropDownObj = NRDropDownHelper(delegateObj: self, dataSource: ["a","s"], anchorV: btn, selectedIndex: selectedIndex, selectionHandler: { [weak self] index in
+            self?.selectedIndex = index
+        })
+        dropDownObj?.cellProperties.cellType = .selectedBackground
+        dropDownObj?.cellProperties.selectedBGColor = .lightText
+        dropDownObj?.cellHeight = 30
+        dropDownObj?.show()
     }
 
 }

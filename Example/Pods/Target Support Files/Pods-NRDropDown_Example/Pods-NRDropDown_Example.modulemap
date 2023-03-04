@@ -1,0 +1,6 @@
+framework module Pods_NRDropDown_Example {
+  umbrella header "Pods-NRDropDown_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

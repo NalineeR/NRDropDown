@@ -128,9 +128,7 @@
 		5B77B051E164D3D19943BB64209B420E /* NRDropDown */ = {
 			isa = PBXGroup;
 			children = (
-				FCFAD0A129B39AAD00D79E1B /* View */,
-				FCFAD09E29B39A9A00D79E1B /* Modal */,
-				FCFAD09C29B39A4300D79E1B /* NRDropDownHelper.swift */,
+				FCFAD0A929B3A14C00D79E1B /* Sources */,
 				BDF71714C2104C6362497D07E5A0AB14 /* Pod */,
 				E772D5AAA0EC747242622506EB99AB37 /* Support Files */,
 			);
@@ -249,6 +247,16 @@
 				FCFAD0A729B39AEA00D79E1B /* NRDropDownCheck.png */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		FCFAD0A929B3A14C00D79E1B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FCFAD09C29B39A4300D79E1B /* NRDropDownHelper.swift */,
+				FCFAD0A129B39AAD00D79E1B /* View */,
+				FCFAD09E29B39A9A00D79E1B /* Modal */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

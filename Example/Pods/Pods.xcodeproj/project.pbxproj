@@ -156,7 +156,7 @@
 		547AED902252F2AD00462EDD497AD7CB /* NRDropDown */ = {
 			isa = PBXGroup;
 			children = (
-				FCB4B92529B3B43D00C9743E /* Sources */,
+				FCB4B92529B3B43D00C9743E /* Classes */,
 				9E1312C6DEBAFFC112C7CE179FBD1430 /* Pod */,
 				16F6EADD60611238192EFDF9445958F6 /* Support Files */,
 			);
@@ -262,15 +262,15 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
-		FCB4B92529B3B43D00C9743E /* Sources */ = {
+		FCB4B92529B3B43D00C9743E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				EA60EBDE8EEA4CB17261A1C9F2324A95 /* Helper */,
 				3F8D33E8BE5EC66C00DBDB090F4727CD /* Modal */,
 				D6A91CF05DF1BA4A7549335A11F85FF7 /* View */,
 			);
-			name = Sources;
-			path = Example/Sources;
+			name = Classes;
+			path = Example/Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

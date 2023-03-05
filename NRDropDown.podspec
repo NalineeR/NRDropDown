@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NRDropDown'
-  s.version          = '0.1.3'
+  s.version          = '0.1.5'
   s.summary          = 'Custom Drop down with selection icon'
 
 # This description is used to generate tags and improve search results.
@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/NalineeR/NRDropDown.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
   s.ios.deployment_target = '10.0'
-  s.source_files = 'Sources/**/*.swift'
+  s.source_files = 'NRDropDown/Sources/**/*'
   
   # s.resource_bundles = {
   #   'NRDropDown' => ['NRDropDown/Assets/*.png']

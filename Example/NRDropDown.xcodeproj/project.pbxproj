@@ -15,6 +15,7 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		86E3BBE5C42763C2EB04273D /* Pods_NRDropDown_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 032C89300480C4D4694BE2A4 /* Pods_NRDropDown_Tests.framework */; };
 		9677FC8526A193F8B914E9E4 /* Pods_NRDropDown_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E63EFFF90BB87573C34F2E /* Pods_NRDropDown_Example.framework */; };
+		FCB4B93229B3BD5200C9743E /* NRDropDown.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 408B3F3734C0F5B2DD768DF7 /* NRDropDown.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -249,6 +250,7 @@
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				FCB4B93229B3BD5200C9743E /* NRDropDown.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/NalineeR/NRDropDown.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
   s.ios.deployment_target = '10.0'
-  s.source_files = 'NRDropDown/Classes/**/*'
+  s.source_files = 'NRDropDown/Classes/**/*.swift'
   
   # s.resource_bundles = {
   #   'NRDropDown' => ['NRDropDown/Assets/*.png']

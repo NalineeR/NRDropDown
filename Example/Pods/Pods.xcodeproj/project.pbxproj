@@ -21,11 +21,6 @@
 		EDE35F41B93C17E374751A6C61120896 /* NRDropDown-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 62FF094C684007F7F97B6BF8B46B1684 /* NRDropDown-dummy.m */; };
 		FCB4B92929B3B55500C9743E /* NRDropDownCheck.png in Resources */ = {isa = PBXBuildFile; fileRef = FCB4B92829B3B55500C9743E /* NRDropDownCheck.png */; };
 		FCB4B92B29B3B57A00C9743E /* NRDropDownTblVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCB4B92A29B3B57A00C9743E /* NRDropDownTblVCell.xib */; };
-		FCB4B92C29B3B68900C9743E /* NRDropDownTblVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCB4B92A29B3B57A00C9743E /* NRDropDownTblVCell.xib */; };
-		FCB4B92D29B3B68E00C9743E /* NRDropDownCheck.png in Resources */ = {isa = PBXBuildFile; fileRef = FCB4B92829B3B55500C9743E /* NRDropDownCheck.png */; };
-		FCB4B92F29B3B6CB00C9743E /* NRDropDownTblVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7DAFB129A47A7A8D4C854E9B0AE85B /* NRDropDownTblVCell.swift */; };
-		FCB4B93029B3B71900C9743E /* CellModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07B700A3427C524823B1C1E8BEA59C1 /* CellModal.swift */; };
-		FCB4B93129B3B71B00C9743E /* NRDropDownHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910D0E240BF1E5C5CE5EDF972BCAE56 /* NRDropDownHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,14 +131,6 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		3F8D33E8BE5EC66C00DBDB090F4727CD /* Modal */ = {
-			isa = PBXGroup;
-			children = (
-				C07B700A3427C524823B1C1E8BEA59C1 /* CellModal.swift */,
-			);
-			path = Modal;
-			sourceTree = "<group>";
-		};
 		4FA75ED7F3046447CD164BF287EFC5C7 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -244,33 +231,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D6A91CF05DF1BA4A7549335A11F85FF7 /* View */ = {
+		FCB4B92529B3B43D00C9743E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				0910D0E240BF1E5C5CE5EDF972BCAE56 /* NRDropDownHelper.swift */,
+				C07B700A3427C524823B1C1E8BEA59C1 /* CellModal.swift */,
 				FCB4B92A29B3B57A00C9743E /* NRDropDownTblVCell.xib */,
 				FCB4B92829B3B55500C9743E /* NRDropDownCheck.png */,
 				BE7DAFB129A47A7A8D4C854E9B0AE85B /* NRDropDownTblVCell.swift */,
 			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		EA60EBDE8EEA4CB17261A1C9F2324A95 /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-				0910D0E240BF1E5C5CE5EDF972BCAE56 /* NRDropDownHelper.swift */,
-			);
-			path = Helper;
-			sourceTree = "<group>";
-		};
-		FCB4B92529B3B43D00C9743E /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				EA60EBDE8EEA4CB17261A1C9F2324A95 /* Helper */,
-				3F8D33E8BE5EC66C00DBDB090F4727CD /* Modal */,
-				D6A91CF05DF1BA4A7549335A11F85FF7 /* View */,
-			);
 			name = Classes;
-			path = Example/Classes;
+			path = NRDropDown/Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -400,8 +371,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCB4B92C29B3B68900C9743E /* NRDropDownTblVCell.xib in Resources */,
-				FCB4B92D29B3B68E00C9743E /* NRDropDownCheck.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,9 +401,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCB4B92F29B3B6CB00C9743E /* NRDropDownTblVCell.swift in Sources */,
-				FCB4B93029B3B71900C9743E /* CellModal.swift in Sources */,
-				FCB4B93129B3B71B00C9743E /* NRDropDownHelper.swift in Sources */,
 				6942421E508371271DC914CFDC06B8C3 /* Pods-NRDropDown_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -143,6 +143,7 @@
 		547AED902252F2AD00462EDD497AD7CB /* NRDropDown */ = {
 			isa = PBXGroup;
 			children = (
+				FCB4B93329B4FC9100C9743E /* Resources */,
 				FCB4B92529B3B43D00C9743E /* Classes */,
 				9E1312C6DEBAFFC112C7CE179FBD1430 /* Pod */,
 				16F6EADD60611238192EFDF9445958F6 /* Support Files */,
@@ -236,12 +237,19 @@
 			children = (
 				0910D0E240BF1E5C5CE5EDF972BCAE56 /* NRDropDownHelper.swift */,
 				C07B700A3427C524823B1C1E8BEA59C1 /* CellModal.swift */,
-				FCB4B92A29B3B57A00C9743E /* NRDropDownTblVCell.xib */,
-				FCB4B92829B3B55500C9743E /* NRDropDownCheck.png */,
 				BE7DAFB129A47A7A8D4C854E9B0AE85B /* NRDropDownTblVCell.swift */,
 			);
 			name = Classes;
 			path = NRDropDown/Classes;
+			sourceTree = "<group>";
+		};
+		FCB4B93329B4FC9100C9743E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FCB4B92829B3B55500C9743E /* NRDropDownCheck.png */,
+				FCB4B92A29B3B57A00C9743E /* NRDropDownTblVCell.xib */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

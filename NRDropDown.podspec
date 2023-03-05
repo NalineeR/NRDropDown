@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NRDropDown'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = 'Custom Drop down with selection icon'
 
 # This description is used to generate tags and improve search results.
@@ -41,4 +41,5 @@ Pod::Spec.new do |s|
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   s.requires_arc = true
+  s.resources = "Resources/**/*.{png,xib}"
 end

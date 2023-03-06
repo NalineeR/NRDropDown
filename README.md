@@ -37,9 +37,6 @@ GitHub - https://github.com/NalineeR
 Simply add this line to your pod file -> pod 'NRDropDown'
 Then run following command in terminal -> pod install
 ```
-    
-![Logo](https://drive.google.com/file/d/1vld-WuJXGHSsq0BIhpQjEx1WbUEIHVjR/view?usp=share_link)
-
 
 ## Usage/Examples
 

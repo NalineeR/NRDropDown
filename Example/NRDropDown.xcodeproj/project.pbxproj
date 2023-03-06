@@ -30,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		032C89300480C4D4694BE2A4 /* Pods_NRDropDown_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NRDropDown_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B1FCD31A80000B62B1A6B52 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		329E814AE9891261D8C841E6 /* Pods-NRDropDown_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NRDropDown_Example.debug.xcconfig"; path = "Target Support Files/Pods-NRDropDown_Example/Pods-NRDropDown_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		408B3F3734C0F5B2DD768DF7 /* NRDropDown.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NRDropDown.podspec; path = ../NRDropDown.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		553FA8C394A3B66326D86BDA /* Pods-NRDropDown_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NRDropDown_Example.release.xcconfig"; path = "Target Support Files/Pods-NRDropDown_Example/Pods-NRDropDown_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -142,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				408B3F3734C0F5B2DD768DF7 /* NRDropDown.podspec */,
+				0B1FCD31A80000B62B1A6B52 /* README.md */,
 				B785A703433D1CF32E80F6D2 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
